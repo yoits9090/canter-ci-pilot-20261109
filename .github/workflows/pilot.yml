@@ -244,7 +244,7 @@ jobs:
                   'url = "%s"' % url,
                   'request = "%s"' % method,
                   'header = "X-Auth-Token: %s"' % _curl_escape(token),
-                  'write-out = "\\n__CANTER_HTTP_STATUS__%%{http_code}"',
+                  'write-out = "\\n__CANTER_HTTP_STATUS__%{http_code}"',
               )) + '\n'
           
           
